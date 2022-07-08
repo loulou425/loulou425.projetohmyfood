@@ -1,0 +1,11 @@
+semaine1 cours danimation et continuer de pratiquer
+
+graphikart transform et keyfram(animation)
+faire un tableau de comparaison entre keyfram et transition
+dans un fichier pour mieux comprendre
+
+semaine 2
+ finir git et git hub plus tard
+
+commencer la maquette
+

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/*header*/
+.header{
+    text-align: center;
+    height: 60px;
+}
+.header a{
+    float: left;
+    padding: 20px 0px 0px 20px;
+    font-size: large;
+    color: inherit;
+    }
+#logo{
+    margin-top: 15px;
+    width: 150px;
+}
+.food img{
+    width: 100%;
+    height: 250px;
+}
+
+/*section1*/
+
+.carte1{
+    background-color: #f2f2f2;
+    border-radius: 30px 30px 0px 0px;
+    height: 1080px;
+    margin-top: -50px;
+    padding-top: 10px;
+    position: relative;
+}
+.carte1 h1{
+    margin-left: 15px;
+    font-family: Shrikhand, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight : normal;
+}
+.carte1 h1 i{
+padding-left: 40px;
+}
+.carte1 h2{
+font-size: 15px;
+color: gray;
+margin-top: 35px;
+padding-left: 15px;
+display: block;
+border-bottom: solid  black 3px;
+
+}
+.carte1 h2 span{
+
+}
+
+.menu1{
+background-color: white;
+border-radius: 10px;
+width: 90%;
+height: 60px;
+margin: auto;
+padding-left: 10px;
+box-shadow: 0 0 7px rgb(204, 202, 202);
+}
+.menu1 h3{
+ padding-top: 10px;
+margin-bottom: 5px;
+}
+.menu1 p{
+margin: 0;
+color: gray;
+}
+.menu1 span{
+    float: right;
+    padding-right: 20px;
+    color: black;
+}
+
+.commande1{
+    background: linear-gradient(-3deg,#9356DC,#FF79DA);
+    color: white;
+    border-radius: 50px;
+    width: 50%;
+    height: 30px;
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 15px;
+    box-shadow: 0 0 7px rgb(204, 202, 202);
+    text-align: center;
+}
+
+/*footer*/
+footer{
+    background-color: rgba(44, 43, 43, 0.918);
+    height: 200px;
+    color: white;
+}
+footer h1{
+    font-family: Shrikhand, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight : normal;
+    padding: 20px 0px 0px 20px;
+ }
+footer ul{
+    list-style-type: none;
+    padding-left:20px;
+   
+}
+footer li{
+    padding-bottom: 8px;
+    font-size: 17px;
+}
+footer i{
+    padding-right: 15px;
+    font-size: 12px;
+    
+}
+footer a{
+    color: inherit;
+    text-decoration: none;
+}
