@@ -105,19 +105,55 @@ padding-top: 20px;
 .resto{
     text-decoration: none;
     color: inherit;
+   
 }
 .resto img{
+    z-index: 0;
+    position: absolute;
     width: 100%;
     height: 70%;
     border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
 }
 .resto i {
     float: right;
-    padding: 5px 30px 0px 0px;
     font-size: large;
+    left: 87%;
+    top: 30%;
+}
+.resto #like1{
+    position: absolute;
+    z-index: 1;
+}
+.resto #like1:hover{
+    display: none;
+    z-index: 0;
+}
+.resto #like2{
+    color: white;
+    position: absolute;
+   z-index: 0;
+}
+.resto #like2:hover{
+    color: #9356DC;
+    z-index: 1;
+}
+.resto span{
+    z-index: 2;
+    position: absolute;
+    background-color: #99E2D0;
+    box-shadow: 0 0 7px rgb(204, 202, 202);
+    color: #038147;
+    text-align: center;
+    padding-top: 5px;
+    width: 24%;
+    height: 10%;
+    left: 72%;
+    top: 5%;
 }
 
 .resto2{
+position: relative;
 background-color: white;
 border-radius: 10px;
 width: 90%;
@@ -126,10 +162,14 @@ margin: 20px;
 box-shadow: 0 0 7px rgb(204, 202, 202);
 }
 .resto2 h3{
+ position: relative;
+ top: 73%;
 margin: 0;
 padding:6px 10px;
 }
 .resto2 p{
+position: relative;
+top: 73%;
 margin: 0;
 padding:0px 10px;
 }
