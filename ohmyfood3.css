@@ -24,6 +24,7 @@ body{
 .food img{
     width: 100%;
     height: 250px;
+    object-fit: cover;
 }
 
 /*section1*/
@@ -31,7 +32,7 @@ body{
 .carte1{
     background-color: #f2f2f2;
     border-radius: 30px 30px 0px 0px;
-    height: 1080px;
+    height: 1250px;
     margin-top: -50px;
     padding-top: 10px;
     position: relative;
@@ -42,44 +43,116 @@ body{
     font-size: 25px;
     font-weight : normal;
 }
-.carte1 h1 i{
-padding-left: 40px;
-}
 .carte1 h2{
 font-size: 15px;
 color: gray;
 margin-top: 35px;
-padding-left: 15px;
-display: block;
-border-bottom: solid  black 3px;
-
+margin-left: 15px;
+padding-bottom: 5px;
+border-bottom: solid #99E2D0 3px;
+width: 45px;
+left: 20%;
 }
-.carte1 h2 span{
 
+.carte1 i{
+   left: 86%;
+   top: 3%;
+   cursor: pointer;
+}
+#like1{
+    position: absolute;
+    z-index: 1;
+}
+#like1:hover{
+    z-index: 0;
+}
+#like2{
+    color: white;
+    position: absolute;
+    z-index: 0;
+}
+#like2:hover{
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+}
+
+#like2:active{
+ animation: animlike 1s;
 }
 
 .menu1{
-background-color: white;
-border-radius: 10px;
-width: 90%;
-height: 60px;
-margin: auto;
-padding-left: 10px;
-box-shadow: 0 0 7px rgb(204, 202, 202);
-}
-.menu1 h3{
- padding-top: 10px;
-margin-bottom: 5px;
-}
-.menu1 p{
-margin: 0;
-color: gray;
-}
-.menu1 span{
-    float: right;
-    padding-right: 20px;
+    animation: lol 0.8s;
+    background-color: white;
+    display: flex;
+    padding: 15px;
+    border-radius: 18px;
+    margin: auto;
+    margin-bottom: 15px;
+    box-shadow: 0 0 7px rgb(204, 202, 202);
+    width: 90%;
+    overflow: hidden;
+    cursor: pointer;
+    }
+    .menu1 h3{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    }
+    .menu1 p{
+    margin: 0;
+    color: gray;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    }
+    .menu1 span{
     color: black;
-}
+    left: 85%;
+    }
+    
+    .valid {
+     background-color: #99E2D0;
+     margin: -16px -80px -16px 16px;
+     width: 65px;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     transition-duration: 0.3s;
+    }
+    .menu2{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1;
+    }
+    .prix{
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    }
+    
+    .icon{
+    height: 10px;
+    width: 10px;
+    color:#99E2D0;
+    border-radius: 100px;
+    background-color: white;
+    padding: 10px;
+    transform: rotate(-250deg);
+    transition-duration: 0.7s;
+    }
+
+   .menu1:hover .valid{
+    margin-right: -15px;
+    }
+   .menu1:hover .icon {
+    transform: rotate(0);
+    }
 
 .commande1{
     background: linear-gradient(-3deg,#9356DC,#FF79DA);
@@ -92,6 +165,7 @@ color: gray;
     padding-top: 15px;
     box-shadow: 0 0 7px rgb(204, 202, 202);
     text-align: center;
+    cursor: pointer;
 }
 
 /*footer*/
@@ -105,6 +179,7 @@ footer h1{
     font-size: 20px;
     font-weight : normal;
     padding: 20px 0px 0px 20px;
+    margin-top: 0;
  }
 footer ul{
     list-style-type: none;
@@ -124,3 +199,43 @@ footer a{
     color: inherit;
     text-decoration: none;
 }
+
+
+
+@media screen and (min-width: 800px){
+
+
+
+/*section1*/
+.carte1{
+    height: 700px;
+    padding-left: 20%;
+}
+
+.menu1{
+    width: 20%;
+    margin: 10px 10px 10px 10px;
+    display: inline-flex;
+}
+.commande1{
+    width: 30%;
+    max-width: 420px; 
+    margin-left: 23%;
+}
+
+/*footer*/
+footer{
+    height: 150px;
+    padding: 20px 0px 30px 55px;
+}
+footer h1{
+    margin-bottom: 35px;
+}
+footer li{
+    display: inline-block;
+    padding-right: 5%;
+}
+
+}
+
+ 

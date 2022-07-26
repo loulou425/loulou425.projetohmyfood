@@ -1,4 +1,4 @@
-/*loader menu*/
+/*loader menuacceuil*/
 @keyframes loader {
   100% {
     opacity: 0;
@@ -44,4 +44,61 @@
 }
 
 
+/*menu*/
+@keyframes lol {
 
+  0% {
+      transform:  translateY(25px);
+      opacity: 0;
+    }
+  100% {
+    transform:  translateY(0);
+    opacity: 1 ;
+  }
+}
+.menu1{
+  animation: lol 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(.42,.7,.63,.85);
+}
+.anim1{
+ animation-delay: 0.4s;
+}
+.anim2{
+  animation-delay: 0.5s;
+}
+.anim3{
+  animation-delay: 0.6s;
+}
+.anim4{
+  animation-delay: 0.8s;
+}
+.anim5{
+  animation-delay: 0.9s;
+}
+.anim6{
+  animation-delay: 1s;
+}
+.anim7{
+  animation-delay: 1.2s;
+}
+.anim8{
+  animation-delay: 1.3s;
+}
+.anim9{
+  animation-delay: 1.4s;
+}
+.anim10{
+  animation-delay: 1.5s;
+}
+
+/*like*/
+@keyframes animlike {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+   opacity:1;
+  }
+}

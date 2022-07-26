@@ -22,7 +22,7 @@ body{
   width: 100%;
   height: 45px;
   text-align: center;
-  box-shadow: 7px 0 7px rgb(204, 202, 202);
+  box-shadow: 7px 0 15px rgba(10, 10, 10, 0);
 }
 .recherche i{
     margin: 15px 10px 0px 0;
@@ -38,57 +38,73 @@ body{
     margin: auto; 
     padding-top: 30px; 
     width: 75%; 
+    max-width: 250px;
     font-size: 25px;
 }
  .reserv2 {
     width: 80%;
-    margin:15px 0 25px 40px;
+    margin: auto;
+    margin-top:15px;
+    margin-bottom: 25px;
  }
 .reserv3{
     background: linear-gradient(-3deg,#9356DC,#FF79DA);
     color: white;
     border-radius: 50px;
     width: 60%;
+    max-width: 250px;
     height: 30px;
     padding-top: 18px;
     margin: auto;
+    cursor: pointer;
     box-shadow: 0 0 7px rgb(204, 202, 202);
+}
+.reserv3:hover{
+    filter: brightness(1.1);
+    box-shadow: 0 0 7px black;
 }
 
 /*fonctionnement*/
 .fonct{
-    height: 350px;
+    height: 400px;
     padding-top: 20px;
 }
 .fonct h1{
 padding-left: 15px;
 margin-bottom: 25px;
 }
-.fonct p {
+.fonct1 {
+    display:flex ;
     text-align: center;
+    align-items: center;
     background-color: rgb(236, 235, 235);
     border-radius: 10px;
     width: 90%;
-    height: 40px;
-    margin:20px;
-    padding-top: 20px;
+    height: 60px;
+    margin:30px;
     box-shadow: 0 0 7px rgb(204, 202, 202);
 }
-.fonct p:hover{
-    background-color :#e3d8f5;
-}
-.fonct p :hover{
-    color: #9356DC;
+.fonct1 p{
+    margin: 0;
 }
 .fonct i{
-padding:0px 30px;
 color: rgb(134, 133, 133);
 font-size: 18px;
+margin: 20px;
 }
 .fonct span{
-    margin-left: -90px;
     background-color:#9356DC ;
     border-radius: 50%;
+    padding: 4px 8px 4px 8px;
+    margin-left: -10px;
+    color: white;
+}
+.fonct1:hover{
+    background-color :#e3d8f5;
+    box-shadow: 0 0 7px rgb(148, 146, 146);
+}
+.fonct1 i:hover{
+    color: #9356DC;
 }
 
 /*resto*/
@@ -101,45 +117,51 @@ padding-top: 20px;
     padding:20px 0px 0px 20px;
 }
 
-
 .resto{
     text-decoration: none;
     color: inherit;
-   
+    position: relative;
 }
 .resto img{
     z-index: 0;
-    position: absolute;
+   
     width: 100%;
-    height: 70%;
+    height: 140px;
     border-radius: 10px 10px 0px 0px;
     object-fit: cover;
 }
-.resto i {
+.like {
     float: right;
     font-size: large;
-    left: 87%;
-    top: 30%;
+    left: 90%;
+    top: 80%;
+    position: absolute;
+    cursor: pointer;
 }
-.resto #like1{
+#like1{
     position: absolute;
     z-index: 1;
 }
-.resto #like1:hover{
-    display: none;
+#like1:hover{
+    color: transparent;
     z-index: 0;
 }
-.resto #like2{
+#like2{
     color: white;
     position: absolute;
-   z-index: 0;
+    z-index: 0;
 }
-.resto #like2:hover{
-    color: #9356DC;
+#like2:hover{
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     z-index: 1;
 }
+#like2:active{
+animation: animlike 1s;
+}
+
 .resto span{
-    z-index: 2;
     position: absolute;
     background-color: #99E2D0;
     box-shadow: 0 0 7px rgb(204, 202, 202);
@@ -147,9 +169,12 @@ padding-top: 20px;
     text-align: center;
     padding-top: 5px;
     width: 24%;
-    height: 10%;
+    height: 20px;
     left: 72%;
-    top: 5%;
+    margin-top: 20px;
+}
+.resto:hover{
+    filter: brightness(1.05);
 }
 
 .resto2{
@@ -162,13 +187,11 @@ margin: 20px;
 box-shadow: 0 0 7px rgb(204, 202, 202);
 }
 .resto2 h3{
- position: relative;
- top: 73%;
+top: 73%;
 margin: 0;
 padding:6px 10px;
 }
 .resto2 p{
-position: relative;
 top: 73%;
 margin: 0;
 padding:0px 10px;
@@ -205,3 +228,44 @@ footer a{
     text-decoration: none;
 }
 
+
+@media screen and (min-width: 800px){
+
+/*fonctionnement*/
+.fonct{
+    height: 150px;
+    display: flex;
+    padding-left: 55px;
+}
+.fonct h1{
+    padding-top: 31px;
+}
+.fonct1{
+    width: 30%;
+    max-width: 420px;
+}
+
+/*resto*/
+.restaurants{
+    height: 600px;
+    padding-left: 12%;
+}
+.resto2{
+    display: inline-block;
+    width: 40%;
+}
+
+/*footer*/
+footer{
+    height: 150px;
+    padding: 20px 0px 30px 55px;
+}
+footer h1{
+    margin-bottom: 35px;
+}
+footer li{
+    display: inline-block;
+    padding-right: 5%;
+}
+
+}
