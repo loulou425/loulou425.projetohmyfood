@@ -18,13 +18,11 @@
   position: fixed;
   height: 100%;
   width: 100%;
-  left: 0;
-  top: 0;
   background-color: rgba(255, 255, 255, 0.90);
-  animation: loader 3s;
-  animation-delay: 3s;
+  animation: loader 2s;
+  animation-delay: 2s;
   animation-fill-mode: both;
-  z-index: 1000;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,8 +43,7 @@
 
 
 /*menu*/
-@keyframes lol {
-
+@keyframes cartes {
   0% {
       transform:  translateY(25px);
       opacity: 0;
@@ -57,7 +54,7 @@
   }
 }
 .menu1{
-  animation: lol 0.8s;
+  animation: cartes 0.8s;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(.42,.7,.63,.85);
 }
