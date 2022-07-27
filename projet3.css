@@ -34,7 +34,7 @@ body{
     height: 270px;
 
 }
-.reserv h1 {
+.reserv h2 {
     margin: auto; 
     padding-top: 30px; 
     width: 75%; 
@@ -69,7 +69,7 @@ body{
     height: 400px;
     padding-top: 20px;
 }
-.fonct h1{
+.fonct h2{
 padding-left: 15px;
 margin-bottom: 25px;
 }
@@ -113,7 +113,7 @@ background-color: #f2f2f2;
 height: 1000px;
 padding-top: 20px;
 }
-.restaurants h1{
+.restaurants h2{
     padding:20px 0px 0px 20px;
 }
 
@@ -138,26 +138,26 @@ padding-top: 20px;
     position: absolute;
     cursor: pointer;
 }
-#like1{
+.like1{
     position: absolute;
     z-index: 1;
 }
-#like1:hover{
+.like1:hover{
     color: transparent;
     z-index: 0;
 }
-#like2{
+.like2{
     color: white;
     position: absolute;
     z-index: 0;
 }
-#like2:hover{
+.like2:hover{
     background: -webkit-linear-gradient(#9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 1;
 }
-#like2:active{
+.like2:active{
 animation: animlike 1s;
 }
 
