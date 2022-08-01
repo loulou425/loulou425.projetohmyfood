@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&family=Poppins:wght@100&family=Raleway:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
 body{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
+}
+p{
+ font-family: roboto, Helvetica, sans-serif;
+}
+h2{
+ font-family: roboto, Arial, Helvetica, sans-serif;   
+}
+h3{
+font-family: roboto, Arial, Helvetica, sans-serif; 
+}
+span{
+font-family: roboto, Helvetica, sans-serif;
 }
 
 /*header*/
@@ -81,7 +92,8 @@ margin-bottom: 25px;
     border-radius: 10px;
     width: 90%;
     height: 60px;
-    margin:30px;
+    margin:auto;
+    margin-bottom: 30px;
     box-shadow: 0 0 7px rgb(204, 202, 202);
 }
 .fonct1 p{
@@ -183,7 +195,8 @@ background-color: white;
 border-radius: 10px;
 width: 90%;
 height: 200px;
-margin: 20px;
+margin: auto;
+margin-bottom: 20px;
 box-shadow: 0 0 7px rgb(204, 202, 202);
 }
 .resto2 h3{
@@ -216,6 +229,7 @@ footer ul{
     padding-left:20px;
 }
 footer li{
+    font-family: roboto, Helvetica, sans-serif;
     padding-bottom: 8px;
     font-size: 17px;
 }
@@ -237,11 +251,12 @@ footer a{
     display: flex;
     padding-left: 55px;
 }
-.fonct h1{
-    padding-top: 31px;
+.fonct h2{
+    padding-top: 60px;
 }
 .fonct1{
     width: 30%;
+    margin-left: 5%;
     max-width: 420px;
 }
 

@@ -34,7 +34,7 @@
       margin: 8px;
       border-radius: 50%;
       border: 5px solid black;
-      border-color: black black transparent;
+      border-color: #99E2D0 #99E2D0 transparent;
       animation: loader2 1.5s linear infinite;
 }
 
